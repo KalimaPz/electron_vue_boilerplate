@@ -1,24 +1,29 @@
-# vue_electron
+# Vue Electron Boilerplate
+This boilerplate included with Vuetify , Vuex , Router for a basic project structure
+## How to Run it
 
-## Project setup
-```
-yarn install
-```
+### Get dependencies
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
+First thing you need to get all dependencies first with `yarn`
 
-### Compiles and minifies for production
-```
-yarn build
-```
+## Run
 
-### Lints and fixes files
-```
-yarn lint
-```
+- **Web Mode**
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+    `yarn start`
+
+- **Desktop Mode** 
+    
+    `yarn electron:serve`
+
+## Build
+
+- **Web Mode**
+
+    `yarn build`
+
+- **Desktop Mode** 
+    
+    `yarn electron:build`
+    
+---
