@@ -4,7 +4,7 @@ This boilerplate included with Vuetify , Vuex , Router, Electron Builder for a b
 
 ### Get dependencies
 
-First thing you need to get all dependencies first with `yarn`
+First thing you need to get all dependencies first with `yarn` or `npm install`
 
 ## Run
 
