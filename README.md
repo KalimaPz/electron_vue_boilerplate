@@ -1,10 +1,10 @@
 # Vue Electron Boilerplate
-This boilerplate included with Vuetify , Vuex , Router for a basic project structure
+This boilerplate included with Vuetify , Vuex , Router, Electron Builder for a basic project structure
 ## How to Run it
 
 ### Get dependencies
 
-First thing you need to get all dependencies first with `yarn`
+First thing you need to get all dependencies first with `yarn` or `npm install`
 
 ## Run
 
@@ -25,5 +25,10 @@ First thing you need to get all dependencies first with `yarn`
 - **Desktop Mode** 
     
     `yarn electron:build`
-    
+## Add Plugins
+    $vue add <plugins_name>
+    Example
+    $vue add vuetify
+    $vue add router
+    $vue add vuex
 ---
