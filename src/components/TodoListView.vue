@@ -6,8 +6,13 @@
         <v-list-item>
           <v-list-item-content>
             <v-row>
-              <v-col cols="1"><p class="text-center font-weight-medium">No.</p></v-col>
-              <v-col cols="9"><p class="text-center font-weight-medium">Title</p></v-col>
+              <v-col cols="1"></v-col>
+              <v-col cols="1"
+                ><p class="text-center font-weight-medium">No.</p></v-col
+              >
+              <v-col cols="8"
+                ><p class="text-center font-weight-medium">Title</p></v-col
+              >
               <v-col cols="2">
                 <p class="text-center font-weight-medium">Done ?</p>
               </v-col>
@@ -18,10 +23,17 @@
         <v-list-item v-for="value in getTodos" :key="value.id">
           <v-list-item-content>
             <v-row>
+              <v-col cols="1">
+                <button @click="deleteTodo(value.id)">
+                  <v-icon size="20" color="red" dense>
+                    mdi-alpha-x-circle</v-icon
+                  >
+                </button>
+              </v-col>
               <v-col cols="1"
                 ><p class="text-center">{{ value.id + 1 }}.</p></v-col
               >
-              <v-col cols="9"
+              <v-col cols="8"
                 ><p
                   :class="[
                     value.done ? 'text-decoration-line-through' : '',
@@ -52,6 +64,11 @@ import { mapGetters } from "vuex";
 export default {
   name: "TodoListView",
   computed: { ...mapGetters(["getTodos"]) },
+  methods: {
+      deleteTodo(id) {
+          this.$store.dispatch("deleteTodo", id)
+      }
+  }
 };
 </script>
 

@@ -17,7 +17,7 @@ export default new Vuex.Store({
       });
     },
     DELETETODO(state, id) {
-      state.todos.filter(value => value.id !== id);
+      state.todos = state.todos.filter(value => value.id !== id);
     },
     CHANGESTATUS(state, id) {
       state.todos[id].done = !state.todos[id].done
